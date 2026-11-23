@@ -66,6 +66,9 @@ font-weight:850;color:#160a03;background:var(--orange);box-shadow:var(--lueur)}
 .telecharger{display:flex;margin:26px 0}.telecharger .bouton{width:100%;font-size:1.1rem}
 .sources{margin-top:48px;padding-top:18px;border-top:1px solid rgba(255,138,61,.16);font-size:.95rem}
 .retour{display:flex;width:max-content;align-items:center;min-height:44px;margin-bottom:10px;text-decoration:none}
+.encart-email{margin-top:40px;padding:20px;border-radius:18px;background:var(--verre);border:1px solid var(--bord);font-size:.95rem}
+.encart-email input[type=email]{width:100%;min-height:48px;margin:10px 0;padding:0 14px;border-radius:12px;border:1px solid var(--bord);background:#120d0c;color:var(--texte);font:inherit}
+.encart-email .consent{display:flex;gap:10px;align-items:flex-start;margin:6px 0 14px;color:var(--doux)}.encart-email .consent input{margin-top:6px;min-width:20px;min-height:20px}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.vu{opacity:1;transform:none}
 html:not(.js) .reveal{opacity:1;transform:none}
 @media (min-width:900px){.ouverture .grille{grid-template-columns:1.1fr .9fr}.galet{order:0;width:min(36vw,520px)}}
