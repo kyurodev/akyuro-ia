@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Faire durer tes consignes dans Claude Code · aKyuro · Astuces Claude &amp; IA</title><meta name="description" content="aKyuro · Astuces Claude &amp; IA"><meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0b0909"><link rel="icon" href="../icone.svg" type="image/svg+xml"><link rel="stylesheet" href="../style.css"><script>document.documentElement.classList.add('js');addEventListener('DOMContentLoaded',()=>{const r=matchMedia('(prefers-reduced-motion: reduce)').matches;const e=document.querySelectorAll('.reveal');if(r||!('IntersectionObserver' in window)){e.forEach(x=>x.classList.add('vu'));return}const o=new IntersectionObserver(l=>l.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vu');o.unobserve(x.target)}}),{threshold:.12});e.forEach(x=>o.observe(x))});</script></head>
+<body><a class="saut" href="#contenu">Aller au contenu</a>
+
+<header class="barre"><a class="marque" href="../index.html"><i></i>aKyuro</a>
+<nav><a href="../index.html#guides">Guides</a><a href="../a-propos/index.html">À propos</a></nav></header>
+<main id="contenu"><div class="page"><a class="retour" href="../index.html#guides">← Tous les guides</a><span class="surtitre">Mot-clé : MEMOIRE</span><h1>Faire durer tes consignes dans Claude Code</h1><p class="doux">Guide du reel « Faire durer tes consignes » · mis à jour le 27/11/2026</p>
+<p>Tu as l&#x27;impression que Claude repart de zéro à chaque session et que tu dois lui réexpliquer les règles de ton projet ? Voici 4 réflexes, plus un bonus, pour que ton projet garde ses consignes sans que tu aies à les redire.</p>
+<h2>Ce qu&#x27;il te faut</h2>
+<ul>
+<li>Claude Code, avec l&#x27;offre qui te donne accès à l&#x27;outil (la fiche ne précise pas quelles offres sont concernées).</li>
+<li>Un projet ouvert dans Claude Code.</li>
+<li>Quelques minutes pour mettre en place tes premières consignes durables.</li>
+</ul>
+<h2>Étapes</h2>
+<ol>
+<li><strong>Lance <code>/init</code>.</strong> Tape <code>/init</code> dans Claude Code. Claude analyse ton projet et génère un fichier CLAUDE.md de départ. Ce fichier contient les commandes de build, les instructions de tests et les conventions qu&#x27;il a repérées dans ton code. C&#x27;est ta base : relis-la et ajuste-la si besoin.</li>
+<li><strong>Garde ton fichier sous 200 lignes.</strong> Vise moins de 200 lignes par fichier CLAUDE.md. Un fichier trop long consomme plus de contexte, et Claude suit moins bien tes consignes. Si ton fichier grossit, fais le tri et ne garde que l&#x27;essentiel.</li>
+<li><strong>Range tes consignes ciblées dans <code>.claude/rules/</code>.</strong> Certaines règles ne concernent que certains types de fichiers ou certains sous-dossiers. Avec les règles placées dans <code>.claude/rules/</code>, tu les réserves à ces endroits précis au lieu de tout mettre dans un seul fichier.</li>
+<li><strong>Pour une interdiction stricte, utilise un PreToolUse hook.</strong> Une consigne dans CLAUDE.md reste une consigne que Claude suit. Si tu veux bloquer une action quoi que Claude décide, mets en place un PreToolUse hook plutôt qu&#x27;une consigne.</li>
+<li><strong>Bonus : laisse travailler l&#x27;Auto memory.</strong> Avec l&#x27;Auto memory, Claude note lui-même tes corrections et tes préférences. Il les retrouve aux sessions suivantes. Profites-en si l&#x27;option est proposée dans ta configuration.</li>
+</ol>
+<h2>Bon à savoir</h2>
+<ul>
+<li>CLAUDE.md, c&#x27;est ce qui permet à Claude de retrouver les consignes de ton projet d&#x27;une session à l&#x27;autre. Mieux il est tenu, moins tu te répètes.</li>
+<li>Court et clair vaut mieux que long et complet : au-delà de 200 lignes, tu perds en contexte et en efficacité.</li>
+<li>Consigne ou hook ? Une consigne guide Claude. Un PreToolUse hook bloque l&#x27;action, quoi que Claude décide.</li>
+<li>La disponibilité selon les offres n&#x27;est pas précisée : vérifie ce qui est proposé avec ton offre.</li>
+</ul>
+<div class="sources"><h2>Sources</h2>
+<ul>
+<li><a href="https://code.claude.com/docs/en/memory.md" rel="noopener noreferrer">https://code.claude.com/docs/en/memory.md</a></li>
+</ul></div>
+<p class="doux">Une question ? Écris-nous en message privé sur Instagram.</p></div></main>
+<footer><div class="liens"><a href="../index.html#guides">Guides</a><a href="../a-propos/index.html">À propos</a>
+<a href="../confidentialite/index.html">Confidentialité</a><a href="../suppression-des-donnees/index.html">Suppression des données</a>
+<a href="https://www.instagram.com/akyuro.ia/" rel="noopener noreferrer">@akyuro.ia</a></div>
+<p><strong>Compte non officiel, non affilié à Anthropic.</strong> Claude est une marque d'Anthropic.</p>
+<p>Les guides s'appuient uniquement sur la documentation officielle, citée en bas de chaque page.</p></footer>
+</body></html>
